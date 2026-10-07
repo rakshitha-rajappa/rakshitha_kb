@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineer Portfolio - Personal website showcasing projects, skills, and experience.">
+    <title>Software Engineer | Portfolio</title>
+    <!-- Pixel & Modern Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <!-- Brand / Logo -->
+            <div class="logo">
+                <a href="#hero">&lt;DevPortfolio /&gt;</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- ==================================================================
+               NIGHT MODE TOGGLE (MEDIA QUERY & PERSISTENT OVERRIDE)
+               ================================================================== -->
+            <div class="theme-toggle-wrapper">
+                <button type="button" id="theme-toggle" aria-label="Toggle Night Mode" class="pixel-toggle-btn" title="Toggle Night Mode">
+                    <span class="theme-icon pixel-toggle-icon" aria-hidden="true">🌙</span>
+                    <span class="theme-text pixel-toggle-text">NIGHT MODE</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================================================
+       MAIN CONTENT
+       ========================================================================== -->
+    <main>
+
+        <!-- ======================================================================
+           HERO SECTION (PIXEL ART STYLE DESIGN)
+           ====================================================================== -->
+        <!-- Developed with pixel art aesthetic, scanline overlays, user background image, and welcoming title & tagline -->
+        <section id="hero" class="pixel-hero" aria-labelledby="hero-heading">
+            <!-- Simulated retro CRT monitor scanlines -->
+            <div class="pixel-scanlines" aria-hidden="true"></div>
+
+            <div class="container pixel-hero-container">
+                <!-- Pixel Art Window Box -->
+                <div class="pixel-window">
+                    <!-- Retro Titlebar -->
+                    <div class="pixel-window-bar">
+                        <div class="pixel-window-title">
+                            <span class="pixel-indicator">●</span> SYSTEM_READY.EXE // HERO_SECTION
+                        </div>
+                        <div class="pixel-window-controls" aria-hidden="true">
+                            <span class="pixel-btn-min">_</span>
+                            <span class="pixel-btn-max">□</span>
+                            <span class="pixel-btn-close">×</span>
+                        </div>
+                    </div>
+
+                    <!-- Window Main Content -->
+                    <div class="pixel-window-body">
+                        <div class="pixel-hero-grid">
+                            <!-- Left Column: Title, Tagline, Dialogue Box, CTAs -->
+                            <div class="pixel-hero-text">
+                                <div class="pixel-badge">
+                                    <span class="pixel-blink">▶</span> LEVEL 99 SOFTWARE ENGINEER
+                                </div>
+
+                                <!-- Welcome Title -->
+                                <h1 id="hero-heading" class="pixel-title">
+                                    WELCOME, <span class="pixel-highlight">PLAYER 1</span>!
+                                </h1>
+
+                                <!-- Brief Tagline -->
+                                <p class="pixel-tagline">
+                                    Hi, I'm <strong class="pixel-name">Rakshitha KB</strong> &mdash; Crafting clean code, scalable applications, and pixel-perfect digital experiences.
+                                </p>
+
+                                <!-- Pixel Dialogue / Terminal Box -->
+                                <div class="pixel-dialogue-box">
+                                    <p class="pixel-dialogue-text">
+                                        &gt; Mission: Building resilient web architectures &amp; embedded systems.<br>
+                                        &gt; Status: Open to software engineering roles &amp; technical collaborations.
+                                    </p>
+                                </div>
+
+                                <!-- Pixel Call-to-Action Buttons -->
+                                <div class="pixel-cta-group">
+                                    <a href="#projects" class="pixel-btn pixel-btn-primary">
+                                        <span class="btn-icon">⚔️</span> START QUEST
+                                    </a>
+                                    <a href="Rakshitha_KB_Resume.pdf" class="pixel-btn pixel-btn-secondary" download>
+                                        <span class="btn-icon">📜</span> RESUME.PDF
+                                    </a>
+                                    <a href="#contact" class="pixel-btn pixel-btn-ghost">
+                                        <span class="btn-icon">💬</span> SAY HELLO
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Editorial + Pop Out Photo + Layered Cards Component -->
+                            <div class="pixel-hero-avatar-wrapper">
+                                <div class="editorial-card-container">
+                                    <!-- Layer 1: Back Archival Spec / Index Sheet Card -->
+                                    <div class="editorial-card card-layer-back" aria-hidden="true">
+                                        <div class="card-back-header">
+                                            <span class="editorial-archive">ARCHIVE Nº 01</span>
+                                            <span class="editorial-mark">⊕</span>
+                                        </div>
+                                        <div class="card-back-barcode">
+                                            <span class="barcode-bars">||| | |||| | ||| || |||| |</span>
+                                            <span class="barcode-num">2026-ECE-SYS</span>
+                                        </div>
+                                        <div class="card-back-footer">
+                                            <span>SPEC: ELECTRONICS &amp; SOFTWARE</span>
+                                            <span>VOL. 26</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Layer 2: Mid Gallery Matting Card -->
+                                    <div class="editorial-card card-layer-mid" aria-hidden="true">
+                                        <div class="card-mid-inner">
+                                            <span class="mid-crosshair top-left">+</span>
+                                            <span class="mid-crosshair top-right">+</span>
+                                            <span class="mid-crosshair bottom-left">+</span>
+                                            <span class="mid-crosshair bottom-right">+</span>
+                                            <span class="mid-label">COLLECTION // ISSUE 2026</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Layer 3: Main Editorial Cover Card with Pop-Out Photo -->
+                                    <div class="editorial-card card-layer-main">
+                                        <!-- Editorial Header Strip -->
+                                        <div class="cover-header">
+                                            <span class="cover-tag">THE PORTFOLIO JOURNAL</span>
+                                            <span class="cover-issue">ISSUE 26</span>
+                                        </div>
+
+                                        <!-- Pop-out Stage with Magazine Masthead Text Behind Head -->
+                                        <div class="editorial-popout-stage">
+                                            <!-- Masthead Typography (Sits behind head - Iconic Editorial Effect) -->
+                                            <div class="editorial-masthead" aria-hidden="true">
+                                                <span>DEV</span>
+                                            </div>
+
+                                            <!-- Arch Backdrop Matting -->
+                                            <div class="editorial-arch-mat" aria-hidden="true"></div>
+
+                                            <!-- Pop-out Portrait Subject Image -->
+                                            <img src="profile.jpg" alt="Rakshitha KB - Software Engineer" class="editorial-popout-photo">
+                                        </div>
+
+                                        <!-- Rotating Circular Editorial Seal / Wax Stamp -->
+                                        <div class="editorial-stamp" aria-hidden="true">
+                                            <svg viewBox="0 0 100 100" class="stamp-svg">
+                                                <path id="stamp-curve-p" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                                                <text font-size="10.5" fill="currentColor" letter-spacing="2">
+                                                    <textPath href="#stamp-curve-p">
+                                                        ENGINEER • CREATOR • BUILDER •
+                                                    </textPath>
+                                                </text>
+                                            </svg>
+                                            <span class="stamp-center-star">★</span>
+                                        </div>
+
+                                        <!-- Editorial Caption Block -->
+                                        <div class="editorial-caption">
+                                            <div class="caption-figure">FIG. 01 — PORTRAIT</div>
+                                            <div class="caption-title">RAKSHITHA KB</div>
+                                            <div class="caption-sub">B.E. (ECE) • AIT CHIKKAMAGALURU</div>
+                                            <div class="caption-tags">
+                                                <span>FULL-STACK</span>
+                                                <span>SYSTEMS</span>
+                                                <span>EMBEDDED</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Retro Window Footer / Status Bar -->
+                    <div class="pixel-window-footer">
+                        <span class="status-node">&bull; COFFEE: OPTIMAL</span>
+                        <span class="status-node">&bull; BUGS: 0 (IN PRODUCTION)</span>
+                        <span class="status-node">&bull; PRESS [TAB] TO NAVIGATE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           ABOUT SECTION
+           ====================================================================== -->
+        <!-- About section covering engineering background, philosophy, and personal details -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <!-- Placeholder: Biography & Narrative -->
+                    <div class="about-text">
+                        <p>
+                            <!-- Paragraph placeholder for developer journey and passion -->
+                            Hello! I am a software engineer passionate about writing clean, maintainable code and solving complex real-world problems.
+                        </p>
+                        <p>
+                            <!-- Paragraph placeholder for current focus, stack interests, or hobbies -->
+                            Currently specializing in modern web frameworks, distributed architecture, and developer productivity tools.
+                        </p>
+                    </div>
+
+                    <!-- Placeholder: Profile Picture / Visual Element -->
+                    <div class="about-image">
+                        <!-- <img src="profile.jpg" alt="Photo of Software Engineer" loading="lazy"> -->
+                        <div class="image-placeholder" aria-label="Profile image placeholder">
+                            [Profile Image Placeholder]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           SKILLS SECTION
+           ====================================================================== -->
+        <!-- Skills section organizing technical proficiencies, frameworks, tools, and methodologies -->
+        <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Category: Programming Languages -->
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li>JavaScript (ES6+) / TypeScript</li>
+                            <li>Python</li>
+                            <li>Java / C++</li>
+                            <li>HTML5 &amp; CSS3</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Frameworks & Libraries -->
+                    <div class="skill-category">
+                        <h3>Frameworks &amp; Libraries</h3>
+                        <ul class="skill-list">
+                            <li>React / Next.js</li>
+                            <li>Node.js / Express</li>
+                            <li>Tailwind CSS / Sass</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Databases & Cloud / DevOps -->
+                    <div class="skill-category">
+                        <h3>Databases &amp; DevOps</h3>
+                        <ul class="skill-list">
+                            <li>PostgreSQL / MongoDB</li>
+                            <li>Docker / Kubernetes</li>
+                            <li>Git &amp; GitHub Actions / CI/CD</li>
+                            <li>AWS / Cloud Hosting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Engineering Principles -->
+                    <div class="skill-category">
+                        <h3>Core Concepts</h3>
+                        <ul class="skill-list">
+                            <li>REST APIs &amp; GraphQL</li>
+                            <li>Data Structures &amp; Algorithms</li>
+                            <li>System Design &amp; Testing (Jest, Cypress)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           TIMELINE SECTION (EXPERIENCE & EDUCATION)
+           ====================================================================== -->
+        <!-- Timeline section detailing work experience, internships, and educational milestones in chronological order -->
+        <section id="timeline" class="timeline-section" aria-labelledby="timeline-heading">
+            <div class="container">
+                <h2 id="timeline-heading" class="section-title">Experience &amp; Education Timeline</h2>
+                <div class="timeline-container">
+                    <!-- Timeline Item 1: Work Experience -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 &ndash; Present</span>
+                            <h3 class="timeline-role">Software Engineer</h3>
+                            <h4 class="timeline-organization">Tech Company / Startup</h4>
+                            <p class="timeline-description">
+                                <!-- Experience description placeholder -->
+                                Developed and maintained microservices, integrated payment gateways, and improved application latency by 35%.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 2: Previous Role / Internship -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 &ndash; 2024</span>
+                            <h3 class="timeline-role">Software Engineering Intern</h3>
+                            <h4 class="timeline-organization">Tech Company</h4>
+                            <p class="timeline-description">
+                                <!-- Internship description placeholder -->
+                                Built responsive UI components, wrote end-to-end integration tests, and collaborated in an agile team.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 3: Degree / Education -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020 &ndash; 2024</span>
+                            <h3 class="timeline-role">B.Tech / B.E. in Computer Science / Engineering</h3>
+                            <h4 class="timeline-organization">University / Institute Name</h4>
+                            <p class="timeline-description">
+                                <!-- Education details placeholder -->
+                                Graduated with distinction. Relevant Coursework: Algorithms, OS, DBMS, Computer Networks.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           PROJECTS SECTION
+           ====================================================================== -->
+        <!-- Projects section highlighting featured software engineering works, demo links, and repositories -->
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Full-Stack Application Name</h3>
+                            <span class="project-tag">Web Application</span>
+                        </div>
+                        <p class="project-description">
+                            <!-- Project overview placeholder -->
+                            A scalable full-stack application featuring real-time synchronization, user authentication, and RESTful APIs.
+                        </p>
+                        <ul class="project-tech-stack" aria-label="Technologies used">
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Developer Tooling / CLI</h3>
+                            <span class="project-tag">CLI / Open Source</span>
+                        </div>
+                        <p class="project-description">
+                            <!-- Project overview placeholder -->
+                            A high-performance command-line utility for automated file processing and codebase analysis.
+                        </p>
+                        <ul class="project-tech-stack" aria-label="Technologies used">
+                            <li>Python / Rust</li>
+                            <li>Docker</li>
+                            <li>GitHub Actions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Documentation</a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Cloud Infrastructure Pipeline</h3>
+                            <span class="project-tag">DevOps / Cloud</span>
+                        </div>
+                        <p class="project-description">
+                            <!-- Project overview placeholder -->
+                            Automated CI/CD pipeline infrastructure with Docker containerization, linting, and automated testing suites.
+                        </p>
+                        <ul class="project-tech-stack" aria-label="Technologies used">
+                            <li>AWS</li>
+                            <li>Docker</li>
+                            <li>Terraform</li>
+                            <li>GitHub Actions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Architecture Doc</a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           CONTACT SECTION (ETC.)
+           ====================================================================== -->
+        <!-- Contact section for hiring inquiries, collaboration, and social reach-out -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                <p class="contact-intro">
+                    <!-- Invitation placeholder -->
+                    I'm currently open to new opportunities, freelance projects, and collaborations. Feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:engineer@example.com" class="btn btn-primary">Say Hello</a>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Software Engineer Name. Built with semantic HTML &amp; modern web standards.</p>
+            <p>
+                <a href="#hero" class="back-to-top">Back to Top &uarr;</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Script Link (Optional / External JS) -->
+    <script src="script.js"></script>
+</body>
+</html>
